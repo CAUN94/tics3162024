@@ -1,0 +1,282 @@
+/* Importar fuente */
+/* Vincular la fuente Roboto de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset de estilos básicos */
+/* Aplicar margen y padding cero a todos los elementos, y utilizar border-box para box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+/* Configurar la fuente, el color de texto y de fondo, y el padding del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0px 20px;
+}
+
+/* Estilos para el encabezado */
+/* Configurar el fondo, el color del texto, el padding, la alineación y el margen del encabezado */
+#main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px; */
+}
+
+/* Estilos para el título principal */
+/* Configurar el tamaño y el margen del título principal */
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Estilos para la navegación */
+/* Configurar el margen inferior de la navegación */
+#main-nav {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista de navegación */
+/* Configurar la lista de navegación como flexbox y centrar los ítems */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los ítems de navegación */
+/* Configurar el margen de los ítems de navegación */
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Estilos para los enlaces de navegación */
+/* Configurar el color, la decoración y el peso de los enlaces */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos generales para las secciones */
+/* Configurar el margen, el padding, el fondo, el radio de borde y la sombra de las secciones */
+.content-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los encabezados de sección */
+/* Configurar el tamaño y el margen de los encabezados de sección */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los encabezados de subsección */
+/* Configurar el tamaño y el margen de los encabezados de subsección */
+.subsection-title {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos */
+/* Configurar el margen inferior de los párrafos */
+.text-content {
+    margin-bottom: 15px;
+}
+
+/* Estilos para los enlaces externos */
+/* Configurar el color y la decoración de los enlaces */
+.external-link {
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para los enlaces al pasar el ratón */
+/* Configurar la decoración de los enlaces al pasar el ratón */
+.external-link:hover {
+    background-color: blueviolet;
+}
+
+/* Estilos para las imágenes */
+/* Configurar el tamaño máximo, la altura automática, la visualización en bloque y el margen de las imágenes */
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Estilos para las listas */
+/* Configurar el margen y el padding de las listas */
+.unordered-list, .ordered-list {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+/* Estilos para los ítems de lista */
+/* Configurar el margen inferior de los ítems de lista */
+.list-item {
+    margin-bottom: 5px;
+}
+
+/* Estilos para las divisiones y spans */
+/* Configurar el margen inferior de las divisiones */
+.div-section {
+    margin-bottom: 20px;
+}
+
+.inner-div-section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los spans */
+/* Configurar el color y el peso de la fuente de los spans */
+.inline-span {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para texto en negrita, cursiva y tachado */
+/* Configurar el peso de la fuente para texto en negrita */
+.bold-text {
+    font-weight: bold;
+}
+
+/* Configurar el estilo de la fuente para texto en cursiva */
+.italic-text {
+    font-style: italic;
+}
+
+/* Configurar la decoración de línea para texto tachado */
+.strikethrough-text {
+    text-decoration: line-through;
+}
+
+/* Contenedor flexible */
+/* Configurar el contenedor como flexbox, con una brecha y un margen inferior */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Elemento flexible de 1/3 */
+/* Configurar el elemento flexible de 1/3 con padding, fondo y radio de borde */
+.flex-item-1-3 {
+    flex: 1;
+    padding: 20px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+/* Elemento flexible de 2/3 */
+/* Configurar el elemento flexible de 2/3 con padding, fondo y radio de borde */
+.flex-item-2-3 {
+    flex: 2;
+    padding: 20px;
+    background-color: #d7d7d7;
+    border-radius: 5px;
+}
+
+/* Estilos para el pie de página */
+/* Configurar la alineación del texto, el margen superior, el padding, el fondo, el color del texto y el radio de borde del pie de página */
+#main-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Estilos para el texto del pie de página */
+/* Configurar el tamaño de la fuente del texto del pie de página */
+.footer-text {
+    font-size: 1rem;
+}
+
+/* Tamaños de fuente */
+/* Configurar los tamaños de fuente para los títulos principales, secciones, subsecciones y texto general */
+.main-title {
+    font-size: 2.5rem;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.subsection-title {
+    font-size: 1.75rem;
+}
+
+.text-content, .external-link, .inline-span, .list-item {
+    font-size: 1rem;
+}
+
+/* Espaciado general */
+/* Configurar el margen inferior para varios elementos */
+body, .main-title, .section-title, .subsection-title, .text-content, .external-link, .inline-span, .list-item, .div-section {
+    margin-bottom: 1rem;
+}
+
+/* Espaciado específico */
+/* Configurar el padding para el encabezado y el pie de página */
+#main-header, #main-footer {
+    padding: 1rem;
+}
+
+/* Configurar el padding y el margen inferior para las secciones */
+.content-section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Configurar la brecha para el contenedor flexible */
+.flex-container {
+    gap: 2rem;
+}
+
+/* Configurar el padding para los elementos flexibles */
+.flex-item-1-3, .flex-item-2-3 {
+    padding: 2rem;
+}
+
+/* Estilos para las fotos en la sección de fotos */
+.flex-photo {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contenedor Grid */
+/* Configurar el contenedor como grid, con columnas de igual tamaño y una brecha */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Estilos para los ítems del grid */
+/* Configurar el padding, el fondo, el radio de borde y la sombra de los ítems del grid */
+.grid-item {
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
