@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Bootstrap</title>
+    <!-- Importar Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Bienvenidos a Mi Sitio Web</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#seccion1">Sección 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion2">Sección 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion3">Sección 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion4">Sección 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion5">Sección 5</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion6">Sección 6</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <section id="seccion1" class="mb-4">
+            <h2>Sección Principal</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Subsección 1/3</h3>
+                    <p>Contenido de la subsección 1/3.</p>
+                </div>
+                <div class="col-md-8">
+                    <h3>Subsección 2/3</h3>
+                    <p>Contenido de la subsección 2/3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="seccion2" class="mb-4">
+            <h2>Sección 2</h2>
+            <p>Este es un párrafo de ejemplo. HTML es muy fácil de aprender y usar.</p>
+            <a href="https://www.example.com" class="btn btn-primary">Visita Ejemplo</a>
+            <img src="imagen.jpg" class="img-fluid mt-2" alt="Descripción de la imagen">
+        </section>
+        <section id="seccion3" class="mb-4">
+            <h2>Lista No Ordenada</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Elemento 1</li>
+                <li class="list-group-item">Elemento 2</li>
+                <li class="list-group-item">Elemento 3</li>
+            </ul>
+            <h2 class="mt-3">Lista Ordenada</h2>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Elemento 1</li>
+                <li class="list-group-item">Elemento 2</li>
+                <li class="list-group-item">Elemento 3</li>
+            </ol>
+        </section>
+        <section id="seccion4" class="mb-4">
+            <h2>Divisiones y Texto Estilizado</h2>
+            <div class="border p-3">
+                <h3>Sección en un Div</h3>
+                <p>Contenido dentro de un <span class="fw-bold">div</span> con un <span class="fw-bold">span</span> incluido.</p>
+                <div class="border mt-2 p-3">
+                    <h3>Subdivisión</h3>
+                    <p>Texto en <b>negrita</b>, <i>cursiva</i> y <s>tachado</s>.</p>
+                </div>
+            </div>
+        </section>
+        <section id="seccion5" class="mb-4">
+            <h2>Fotos Lado a Lado</h2>
+            <div class="d-flex">
+                <img src="foto1.jpg" class="img-thumbnail me-2" alt="Foto 1">
+                <img src="foto2.jpg" class="img-thumbnail" alt="Foto 2">
+            </div>
+        </section>
+        <section id="seccion6">
+            <h2>Párrafos con Grid</h2>
+            <div class="row">
+                <div class="col-md-4"><p>Este es el primer párrafo...</p></div>
+                <div class="col-md-4"><p>Este es el segundo párrafo...</p></div>
+                <div class="col-md-4"><p>Este es el tercer párrafo...</p></div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Importar Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

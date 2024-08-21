@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Sitio Web</title>
+    <!-- Importar Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark">
+    <header class="bg-primary text-white text-center py-4">
+        <h1 class="display-4">Bienvenidos a Nuestro Sitio</h1>
+        <p class="lead">Un sitio web de ejemplo para replicar</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="#seccion1">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion2">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion3">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion4">Testimonios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seccion5">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-5">
+        <section id="seccion1" class="mb-5">
+            <h2 class="text-center text-uppercase mb-4">Sobre Nosotros</h2>
+            <p class="text-center">Somos una empresa comprometida con ofrecer servicios de alta calidad en el área de tecnología. Nuestro equipo está formado por expertos en diversas disciplinas que trabajan en conjunto para brindar las mejores soluciones a nuestros clientes.</p>
+        </section>
+        <section id="seccion2" class="mb-5">
+            <h2 class="text-center text-uppercase mb-4">Galería</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Imagen 1" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Imagen 2" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Imagen 3" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+        <section id="seccion3" class="mb-5">
+            <h2 class="text-center text-uppercase mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo Web</h5>
+                            <p class="card-text">Ofrecemos soluciones de desarrollo web a medida para satisfacer las necesidades específicas de cada cliente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoría en TI</h5>
+                            <p class="card-text">Brindamos consultoría estratégica en tecnología de la información para ayudar a las empresas a alcanzar sus objetivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="seccion4" class="mb-5">
+            <h2 class="text-center text-uppercase mb-4">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>“La mejor experiencia que hemos tenido con una empresa de tecnología. Altamente recomendados.”</p>
+                                <footer class="blockquote-footer">Juan Pérez, CEO de Empresa X</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>“Su equipo es muy profesional y entregan resultados de alta calidad en poco tiempo.”</p>
+                                <footer class="blockquote-footer">María Gómez, Directora de Proyectos en Empresa Y</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="seccion5">
+            <h2 class="text-center text-uppercase mb-4">Contáctanos</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2024 Ejemplo de Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Importar Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

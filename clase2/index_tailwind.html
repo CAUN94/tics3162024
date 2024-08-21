@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Tailwind</title>
+    <!-- Importar Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-red-900 text-white text-center py-4">
+        <h1 class="text-4xl font-bold">Bienvenidos a Mi Sitio Web</h1>
+    </header>
+    <nav class="bg-gray-200 py-2">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="#seccion1" class="text-gray-800 hover:text-gray-600">Sección 1</a></li>
+            <li><a href="#seccion2" class="text-gray-800 hover:text-gray-600">Sección 2</a></li>
+            <li><a href="#seccion3" class="text-gray-800 hover:text-gray-600">Sección 3</a></li>
+            <li><a href="#seccion4" class="text-gray-800 hover:text-gray-600">Sección 4</a></li>
+            <li><a href="#seccion5" class="text-gray-800 hover:text-gray-600">Sección 5</a></li>
+            <li><a href="#seccion6" class="text-gray-800 hover:text-gray-600">Sección 6</a></li>
+        </ul>
+    </nav>
+    <main class="container mx-auto mt-8">
+        <section id="seccion1" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Sección Principal</h2>
+            <div class="flex space-x-4">
+                <div class="w-1/3 bg-gray-300 p-4 rounded">
+                    <h3 class="text-xl font-medium mb-2">Subsección 1/3</h3>
+                    <p>Contenido de la subsección 1/3.</p>
+                </div>
+                <div class="w-2/3 bg-gray-300 p-4 rounded">
+                    <h3 class="text-xl font-medium mb-2">Subsección 2/3</h3>
+                    <p>Contenido de la subsección 2/3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="seccion2" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Sección 2</h2>
+            <p>Este es un párrafo de ejemplo. HTML es muy fácil de aprender y usar.</p>
+            <a href="https://www.example.com" class="inline-block bg-red-600 text-white py-2 px-4 rounded mt-4">Visita Ejemplo</a>
+            <img src="imagen.jpg" class="mt-4 rounded" alt="Descripción de la imagen">
+        </section>
+        <section id="seccion3" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Lista No Ordenada</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <h2 class="text-2xl font-semibold mt-6 mb-4">Lista Ordenada</h2>
+            <ol class="list-decimal pl-5 space-y-2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol>
+        </section>
+        <section id="seccion4" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Divisiones y Texto Estilizado</h2>
+            <div class="border p-4 rounded">
+                <h3 class="text-xl font-medium mb-2">Sección en un Div</h3>
+                <p>Contenido dentro de un <span class="font-bold">div</span> con un <span class="font-bold">span</span> incluido.</p>
+                <div class="border mt-4 p-4 rounded">
+                    <h3 class="text-xl font-medium mb-2">Subdivisión</h3>
+                    <p>Texto en <b>negrita</b>, <i>cursiva</i> y <s>tachado</s>.</p>
+                </div>
+            </div>
+        </section>
+        <section id="seccion5" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Fotos Lado a Lado</h2>
+            <div class="flex space-x-4">
+                <img src="foto1.jpg" class="rounded shadow-lg" alt="Foto 1">
+                <img src="foto2.jpg" class="rounded shadow-lg" alt="Foto 2">
+            </div>
+        </section>
+        <section id="seccion6">
+            <h2 class="text-2xl font-semibold mb-4">Párrafos con Grid</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <p class="bg-gray-300 p-4 rounded">Este es el primer párrafo...</p>
+                <p class="bg-gray-300 p-4 rounded">Este es el segundo párrafo...</p>
+                <p class="bg-gray-300 p-4 rounded">Este es el tercer párrafo...</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-red-900 text-white text-center py-4 mt-8">
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
