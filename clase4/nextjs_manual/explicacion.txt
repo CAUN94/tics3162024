@@ -1,0 +1,38 @@
+# Tutorial
+
+## 1. Introducción a React
+- React es una librería de JavaScript utilizada para construir interfaces de usuario interactivas.
+- Componentes: Son la unidad básica de construcción en React. Pueden ser reutilizables y anidados.
+- Props: Los componentes pueden recibir datos mediante propiedades (props), lo que permite pasar información de un componente padre a un hijo.
+- State: Los componentes pueden tener un estado interno que se puede actualizar y que afecta la representación del componente.
+
+### Ejemplo de un Componente con Props y State
+```javascript
+function Header({ title }) {
+  return <h1>{title ? title : "Default title"}</h1>;
+}
+### En este caso el props es  title y se entrega un valor por defecto en caso de que no se entregue un valor.
+```para llamar a la funcion puedes hacerlo de la siguiente manera:
+<Header title="Develop. Preview. Ship." />
+
+function HomePage() {
+  const [likes, setLikes] = React.useState(0);
+``` En este caso se utiliza el hook useState para manejar el estado del componente. El primer valor del array es el estado y el segundo es una función que permite actualizar el estado.
+  function handleClick() {
+    setLikes(likes + 1);
+``` En este caso se actualiza el estado de likes sumando 1.
+  }
+
+  return (
+    <div>
+      <Header title="Develop. Preview. Ship." />
+      <button onClick={handleClick}>Like ({likes})</button>
+    </div>
+``` En este caso se muestra el componente Header y un botón que al hacer click aumenta el valor de likes.
+  );
+}
+
+const root = ReactDOM.createRoot(app);
+``` En este caso se crea un root para renderizar la aplicación.
+root.render(<HomePage />);
+``` En este caso se renderiza el componente HomePage en el root.
