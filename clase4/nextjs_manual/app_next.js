@@ -97,15 +97,15 @@ function App() {
       <Helloworld />
       <Helloworld />
       <HelloworldProps text="Hello World with props" name="Cristobal" />
-        <HelloworldPropsName text="Hello World with props again" name="Andres" />
-        <HelloworldDefaultProps />
-        <HelloworldDefaultProps text="Not Default Title" name="Not default name" />
-        <LikeButton />
-        <br />
-        <DisLikeButton />
-        <br />
-        <Toogle />
-        <ToDoList />
+      <HelloworldPropsName text="Hello World with props again" name="Andres" />
+      <HelloworldDefaultProps />
+      <HelloworldDefaultProps text="Not Default Title" name="Not default name" />
+      <LikeButton />
+      <br />
+      <DisLikeButton />
+      <br />
+      <Toogle />
+      <ToDoList />
     </div>
   );
 }
