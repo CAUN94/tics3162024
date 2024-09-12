@@ -23,7 +23,6 @@ export default function NameFilter() {
       />
       <ul>
         {names
-          .filter((name) => name.toLowerCase().includes(filter.toLowerCase()))
           .map((name, index) => (
             <li key={index}>{name}</li>
           ))}
