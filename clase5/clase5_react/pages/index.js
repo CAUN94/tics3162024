@@ -1,11 +1,17 @@
-import Toogle from './/components/Toogle';
+import Toogle from './components/Toogle';
 import Gallery from './components/Gallery';
+// import AnotherToogle from './components/AnotherToogle';
+import Parent from './components/Parent';
+import AnotherParent from './components/AnotherParent';
+import ToDoList from './components/ToDoList';
+import NameFilter from './components/EjemploFilter';
+
 
 export default function Home() {
   return (
     <>
       <head>
-        <title>Create Next App</title>
+        <title>Me Page</title>
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body>
@@ -18,6 +24,11 @@ export default function Home() {
         </div>
         <Toogle />
         <Gallery />
+        {/* <AnotherToogle /> */}
+        <Parent />
+        <AnotherParent />
+        <ToDoList />
+        <NameFilter />
       </body>
     </>
   );
