@@ -11,6 +11,19 @@ export const TaskProvider = ({ children }) => {
         setTasks([newTask, ...tasks]);
     }
 
+    const updateTask = (id,title,description) => {
+        const taskIndex = tasks.findIndex(task => task.id === parseInt(id));
+        const newTasks = [...tasks];
+        newTasks[taskIndex] = { id: parseInt(id), title, description };
+        setTasks(newTasks);
+    };
+
+    const deleteTask = (id) => {
+        // task.filter es una funcion que nos permite filtrar los elementos de un array, en este caso estamos filtrando las tareas que no coincidan con el id que se pasa como argumento y de esta forma eliminamos la tarea que se desea eliminar.
+        // get id type
+        setTasks(tasks.filter(task => task.id !== parseInt(id)));
+    };
+
     // creamos una constante tasks que es un array vacío, esta constante se encargará de almacenar las tareas que se creen en la aplicación.
     const [tasks, setTasks] = useState([
         { id: 1, title: 'Tarea 1', description: 'Descripción de la tarea 1' },
@@ -24,7 +37,9 @@ export const TaskProvider = ({ children }) => {
 
     // retornamos el componente TaskContext.Provider que se encarga de proveer el contexto a los componentes hijos, en este caso children.
     return (
-        <TaskContext.Provider value={{ tasks,addTask }}>
+        <TaskContext.Provider value={
+            { tasks,addTask,deleteTask,updateTask }
+            }>
             {children}
         </TaskContext.Provider>
     );
