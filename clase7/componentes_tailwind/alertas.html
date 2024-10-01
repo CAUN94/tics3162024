@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css">
+</head>
+<body>
+    <div class="container mx-auto mt-10">
+        <a href="index.html" class="text-blue-500 hover:text-blue-700 text-4xl">Volver al Inicio</a>
+    </div>
+    <div  class="container mx-auto grid grid-cols-3 justify-center items-center gap-4 mt-10">
+        <div class="grid grid-cols-3 gap-4 w-full max-w-4xl p-6">
+            
+            <button id="openModal" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Mostrar Modal</button>
+          
+            
+            <button id="showNotification" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600">Notificación Esquina</button>
+          
+            
+            <button id="showError" class="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-600">Mostrar Error</button>
+          </div>
+          
+          
+          <div id="modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white w-full max-w-lg p-6 rounded-lg shadow-lg">
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">¡Alerta Modal!</h2>
+              <p class="text-gray-600 mb-4">Esto es un mensaje de alerta importante dentro de un modal.</p>
+              <div class="flex justify-end">
+                <button id="closeModal" class="px-4 py-2 bg-red-500 text-white font-bold rounded-md hover:bg-red-600">Cerrar</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div id="notification" class="hidden fixed bottom-5 right-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg">
+            Alerta: Esta es una notificación en la esquina inferior derecha.
+          </div>
+          
+          
+          <div class="hidden" id="formContainer">
+            <div class="w-full max-w-sm p-6 bg-white rounded-lg shadow-md">
+              <form id="form">
+                <div class="mb-6">
+                  <label for="username" class="block text-gray-700 font-bold mb-2">Nombre de usuario:</label>
+                  <input type="text" id="username" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Ingresa tu nombre de usuario">
+                  <p id="errorMessage" class="hidden text-red-600 text-sm mt-2">Este campo es obligatorio.</p>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">Enviar</button>
+                
+                <button id="closeError" class="mt-4 w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">Cerrar Error</button>
+              </form>
+            </div>
+          </div>
+          
+          <script>
+            
+            const openModal = document.getElementById("openModal");
+            const closeModal = document.getElementById("closeModal");
+            const modal = document.getElementById("modal");
+          
+            openModal.addEventListener("click", () => modal.classList.remove("hidden"));
+            closeModal.addEventListener("click", () => modal.classList.add("hidden"));
+          
+            
+            const showNotification = document.getElementById("showNotification");
+            const notification = document.getElementById("notification");
+          
+            showNotification.addEventListener("click", () => {
+              notification.classList.remove("hidden");
+              setTimeout(() => notification.classList.add("hidden"), 3000);  
+            });
+          
+            
+            const showError = document.getElementById("showError");
+            const closeError = document.getElementById("closeError");
+            const formContainer = document.getElementById("formContainer");
+            const form = document.getElementById("form");
+            const username = document.getElementById("username");
+            const errorMessage = document.getElementById("errorMessage");
+          
+            showError.addEventListener("click", () => formContainer.classList.remove("hidden"));
+
+            closeError.addEventListener("click", () => formContainer.classList.add("hidden"));
+          
+            form.addEventListener("submit", (e) => {
+              e.preventDefault();
+              if (username.value.trim() === "") {
+                errorMessage.classList.remove("hidden");
+              } else {
+                errorMessage.classList.add("hidden");
+                alert("Formulario enviado con éxito");
+              }
+            });
+          </script>
+    </div>
+  
+</body>
+</html>

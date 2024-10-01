@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css">
+</head>
+<body>
+    <div class="container mx-auto mt-10">
+        <a href="index.html" class="text-blue-500 hover:text-blue-700 text-4xl">Volver al Inicio</a>
+    </div>
+    <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-md mx-auto">
+        <form class="flex flex-col space-y-4">
+          <!-- Input de Texto -->
+          <div>
+            <label for="text-input" class="block text-gray-700 font-bold mb-2">Nombre Completo:</label>
+            <input type="text" id="text-input" placeholder="Escribe tu nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+          </div>
+    
+          <!-- Input de Número -->
+          <div>
+            <label for="number-input" class="block text-gray-700 font-bold mb-2">Edad:</label>
+            <input type="number" id="number-input" placeholder="Introduce tu edad" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+          </div>
+    
+          <!-- Input de Fecha -->
+          <div>
+            <label for="date-input" class="block text-gray-700 font-bold mb-2">Fecha de Nacimiento:</label>
+            <input type="date" id="date-input" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+          </div>
+    
+          <!-- Seleccionador (Select) -->
+          <div>
+            <label for="select-input" class="block text-gray-700 font-bold mb-2">Selecciona tu país:</label>
+            <select id="select-input" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="" disabled selected>Selecciona tu país</option>
+              <option value="Chile">Chile</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Peru">Perú</option>
+              <option value="Colombia">Colombia</option>
+            </select>
+          </div>
+    
+          <!-- Radio Buttons -->
+          <div>
+            <span class="block text-gray-700 font-bold mb-2">Género:</span>
+            <div class="flex space-x-4">
+              <label class="inline-flex items-center">
+                <input type="radio" name="gender" value="Masculino" class="form-radio h-4 w-4 text-blue-500 border-gray-300">
+                <span class="ml-2">Masculino</span>
+              </label>
+              <label class="inline-flex items-center">
+                <input type="radio" name="gender" value="Femenino" class="form-radio h-4 w-4 text-blue-500 border-gray-300">
+                <span class="ml-2">Femenino</span>
+              </label>
+              <label class="inline-flex items-center">
+                <input type="radio" name="gender" value="Otro" class="form-radio h-4 w-4 text-blue-500 border-gray-300">
+                <span class="ml-2">Otro</span>
+              </label>
+            </div>
+          </div>
+    
+          <!-- Checkbox -->
+          <div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-500 border-gray-300">
+              <span class="ml-2">Acepto los términos y condiciones</span>
+            </label>
+          </div>
+    
+          <!-- Textarea -->
+          <div>
+            <label for="textarea-input" class="block text-gray-700 font-bold mb-2">Descripción adicional:</label>
+            <textarea id="textarea-input" rows="4" placeholder="Escribe aquí tus comentarios..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+          </div>
+    
+          <!-- Botón de Submit -->
+          <div>
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Enviar</button>
+          </div>
+        </form>
+      </div>
+  
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css">
+</head>
+<body>
+    <div class="container mx-auto mt-10">
+        <a href="index.html" class="text-blue-500 hover:text-blue-700 text-4xl">Volver al Inicio</a>
+    </div>
+    <div  class="container mx-auto grid grid-cols-3 justify-center items-center gap-4 mt-10">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Botón Primario
+        </button>
+        
+        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            Botón Secundario
+        </button>
+        <button class="flex items-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+            Botón con Icono
+        </button>
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
+            Botón Redondo
+        </button>
+        <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full w-32 h-32 mx-auto">
+            Botón Circular
+        </button>
+        <button class="border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 font-bold py-2 px-4 rounded">
+            Botón con Borde
+        </button>
+        <button class="border-2 border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 font-bold py-2 px-4 rounded-lg">
+            Botón con Borde Suave
+        </button>
+        <button class="border-2 border-blue-500 hover:border-yellow-500 bg-green-500 hover:bg-blue-100 text-black hover:text-white hover:font-bold  hover:italic py-2 px-4 rounded-lg">
+            Botón con Cambios al Ponerse Encima
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-pointer">
+            Botón con Pointer
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-move">
+            Botón con Move
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-not-allowed">
+            Botón con Not Allowed
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-wait">
+            Cargando...
+        </button>
+    </div>
+  
+</body>
+</html>
