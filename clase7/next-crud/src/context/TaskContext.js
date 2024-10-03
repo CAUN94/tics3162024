@@ -10,6 +10,18 @@ export const TaskProvider = ({ children }) => {
         const newTask = { id: tasks.length + 1, title, description };
         setTasks([newTask, ...tasks]);
     }
+
+    const deleteTask = (id) => {
+        setTasks(tasks.filter(task => task.id !== parseInt(id)));
+    }
+
+    const updateTask = (id,title,description) => {
+        const taskIndex = tasks.findIndex(task => task.id === parseInt(id));
+        const newTasks = [...tasks];
+        newTasks[taskIndex] = {id: parseInt(id), title, description};
+        setTasks(newTasks);
+    }
+
     // creamos una constante tasks que es un array vacío, esta constante se encargará de almacenar las tareas que se creen en la aplicación.
     const [tasks, setTasks] = useState([
         { id: 1, title: 'Tarea 1', description: 'Descripción de la tarea 1' },
@@ -18,13 +30,16 @@ export const TaskProvider = ({ children }) => {
         { id: 4, title: 'Tarea 4', description: 'Descripción de la tarea 4' },
         { id: 5, title: 'Tarea 5', description: 'Descripción de la tarea 5' },
         { id: 6, title: 'Tarea 6', description: 'Descripción de la tarea 6' },
+        { id: 7, title: 'Tarea 7', description: 'Descripción de la tarea 7' },
+        { id: 8, title: 'Tarea 8', description: 'Descripción de la tarea 8' },
+        { id: 9, title: 'Tarea 9', description: 'Descripción de la tarea 9' },
+        { id: 10, title: 'Tarea 10', description: 'Descripción de la tarea 10' },
     ]);
-
 
     // retornamos el componente TaskContext.Provider que se encarga de proveer el contexto a los componentes hijos, en este caso children.
     return (
         <TaskContext.Provider value={
-            { tasks,addTask}
+            { tasks,addTask,deleteTask,updateTask}
             }>
             {children}
         </TaskContext.Provider>
