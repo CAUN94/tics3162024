@@ -1,0 +1,4 @@
+npx create-next-app@latest my-i18n-app
+cd my-i18n-app
+npm install @formatjs/intl-localematcher negotiator
+npm run dev
