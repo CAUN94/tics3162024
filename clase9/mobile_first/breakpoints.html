@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Breakpoints</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-2xl text-center mb-4">Breakpoints con Tailwind CSS</h1>
+    <div class="bg-blue-200 dark:bg-blue-900 hidden sm:block md:bg-green-200 md:dark:bg-green-800 lg:bg-red-200 lg:dark:bg-red-800 xl:bg-purple-200 xl:dark:bg-purple-800 p-4">
+      <p class="text-lg">Visible en diferentes tamaños: <span class="block sm:inline">sm</span>, <span class="block md:inline">md</span>, <span class="block lg:inline">lg</span>, <span class="block xl:inline">xl</span>.</p>
+    </div>
+    <div class="bg-gray-200 dark:bg-gray-700 block sm:hidden p-4">
+      <p class="text-lg">Visible solo en pantallas menores a 640px.</p>
+    </div>
+    <a href="index.html" class="text-blue-500 hover:underline dark:text-blue-300">Volver al inicio</a>
+  </div>
+</body>
+</html>
