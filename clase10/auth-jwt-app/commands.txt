@@ -1,0 +1,25 @@
+# Crear la aplicación Next.js
+npx create-next-app@15 auth-jwt-app
+
+# Entrar en el directorio del proyecto
+cd auth-jwt-app
+
+# Crear carpetas necesarias
+mkdir -p src/app/api/login
+mkdir -p src/app/api/register
+mkdir -p src/app/api/protected
+mkdir -p src/app/context
+
+# Crear archivos necesarios
+touch src/app/api/login/route.js
+touch src/app/api/register/route.js
+touch src/app/api/protected/route.js
+touch src/app/login/page.js
+touch src/app/register/page.js
+touch src/app/dashboard/page.js
+touch src/app/context/AuthContext.js
+touch src/app/layout.js
+touch .env.local
+
+# Instalar las dependencias necesarias para bcrypt y JWT
+npm install bcryptjs jsonwebtoken
