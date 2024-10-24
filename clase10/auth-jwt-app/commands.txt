@@ -4,6 +4,8 @@ npx create-next-app@15 auth-jwt-app
 # Entrar en el directorio del proyecto
 cd auth-jwt-app
 
+
+
 # Crear carpetas necesarias
 mkdir -p src/app/api/login
 mkdir -p src/app/api/register

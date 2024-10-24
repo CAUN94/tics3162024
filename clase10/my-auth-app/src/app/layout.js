@@ -1,11 +1,11 @@
+// src/app/layout.js
+import { AuthProvider } from "../context/AuthContext";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-      <title>{process.env.NEXT_PUBLIC_SITE_TITLE || 'Default Title'}</title>
-      </head>
       <body>
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
